@@ -1,0 +1,12 @@
+# Ignore JetBrains Rider & Visual Studio files
+.idea/
+.vs/
+*.suo
+*.user
+*.vscode
+*.vsidx
+*.v2
+*.bin
+*.cache
+obj/
+bin/
