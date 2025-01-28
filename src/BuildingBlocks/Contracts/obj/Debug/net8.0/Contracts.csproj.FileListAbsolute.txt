@@ -1,0 +1,11 @@
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\bin\Debug\net8.0\Contracts.deps.json
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\bin\Debug\net8.0\Contracts.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\bin\Debug\net8.0\Contracts.pdb
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfoInputs.cache
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.AssemblyInfo.cs
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\refint\Contracts.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\Contracts.pdb
+D:\Project\Akai-Microservices\src\BuildingBlocks\Contracts\obj\Debug\net8.0\ref\Contracts.dll

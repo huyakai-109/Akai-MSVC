@@ -1,0 +1,12 @@
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\bin\Debug\net8.0\Common.Logging.deps.json
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\bin\Debug\net8.0\Common.Logging.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\bin\Debug\net8.0\Common.Logging.pdb
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.AssemblyInfoInputs.cache
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.AssemblyInfo.cs
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.csproj.CoreCompileInputs.cache
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\refint\Common.Logging.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.pdb
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\ref\Common.Logging.dll
+D:\Project\Akai-Microservices\src\BuildingBlocks\Common.Logging\obj\Debug\net8.0\Common.Logging.csproj.AssemblyReference.cache
