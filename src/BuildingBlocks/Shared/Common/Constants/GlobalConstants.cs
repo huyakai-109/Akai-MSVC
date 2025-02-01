@@ -1,6 +1,10 @@
 ﻿namespace Shared.Common.Constants
 {
-    public class GlobalConstants
+    public static class GlobalConstants
     {
+        public struct Assembly
+        {
+            public const string Product = "Product.API";
+        }
     }
 }

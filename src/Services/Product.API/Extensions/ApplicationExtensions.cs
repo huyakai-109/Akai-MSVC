@@ -18,7 +18,6 @@ namespace Product.API.Extensions
             {
                 endpoints.MapDefaultControllerRoute();
             });
-
         }
     }
 }
