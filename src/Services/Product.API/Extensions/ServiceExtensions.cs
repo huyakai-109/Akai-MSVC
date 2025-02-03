@@ -22,6 +22,7 @@ namespace Product.API.Extensions
 
             services.ConfigureProductDbContext(configuration);
             services.AddInfrastructureServices();
+            services.AddAutoMapper(typeof(Program).Assembly);
 
             return services;
         }

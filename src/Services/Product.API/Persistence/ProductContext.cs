@@ -12,6 +12,13 @@ namespace Product.API.Persistence
 
         public DbSet<Entities.Product> Products { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Entities.Product>().HasIndex(p => p.No).IsUnique();
+        }
+
+
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             var modified = ChangeTracker.Entries()
