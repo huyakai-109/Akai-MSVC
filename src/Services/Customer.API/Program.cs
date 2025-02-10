@@ -2,6 +2,7 @@ using Common.Logging;
 using Customer.API.Configurations;
 using Customer.API.Extensions;
 using Serilog;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
@@ -13,6 +14,7 @@ try
 {
     // Add services to the container.
     builder.Services.AddCoreDependencies(config);
+    builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

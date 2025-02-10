@@ -6,13 +6,13 @@ using Product.API.Repositories.Interfaces;
 
 namespace Product.API.Repositories
 {
-    public class ProductRepository : RepositoryBaseAsync<Entities.Product, long, ProductContext>, IProductRepository
+    public class ProductRepository : RepositoryBase<Entities.Product, long, ProductContext>, IProductRepository
     {
         public ProductRepository(ProductContext dbContext, IUnitOfWork<ProductContext> unitOfWork) : base(dbContext, unitOfWork)
         {
         }
 
-        public Task Create(Entities.Product product) => CreateAsync(product);
+        public async Task Create(Entities.Product product) => await CreateAsync(product);
 
         public async Task Delete(long id)
         {
@@ -24,8 +24,8 @@ namespace Product.API.Repositories
 
         public async Task<Entities.Product?> GetById(long id) => await GetByIdAsync(id);
 
-        public Task<Entities.Product?> GetProductByNo(string no) => FindByCondition(x => x.No == no).SingleOrDefaultAsync();
+        public async Task<Entities.Product?> GetProductByNo(string no) => await FindByCondition(x => x.No == no).SingleOrDefaultAsync();
 
-        public Task Update(Entities.Product product) => UpdateAsync(product);
+        public async Task Update(Entities.Product product) => await UpdateAsync(product);
     }
 }

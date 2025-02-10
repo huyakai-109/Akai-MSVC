@@ -2,7 +2,7 @@
 
 namespace Product.API.Controllers
 {
-    public class HomeController : ControllerBase
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {

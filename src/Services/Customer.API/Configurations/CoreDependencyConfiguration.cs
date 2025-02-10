@@ -1,4 +1,8 @@
-﻿using Customer.API.Persistence;
+﻿using Contracts.Common.Interfaces;
+using Customer.API.Persistence;
+using Customer.API.Repositories;
+using Customer.API.Repositories.Interfaces;
+using Infrastructure.Common;
 using Microsoft.EntityFrameworkCore;
 using Minio;
 using Shared.Common.Constants;
@@ -9,6 +13,7 @@ namespace Customer.API.Configurations
     {
         public static void AddCoreDependencies(this IServiceCollection collection, IConfiguration configuration)
         {
+            collection.AddServices();
             collection.ConfigureCustomerDbContext(configuration);
             collection.AddMinIO(configuration);
         }
@@ -39,6 +44,12 @@ namespace Customer.API.Configurations
                 .Build());
         }
 
-
+        private static void AddServices(this IServiceCollection collection)
+        {
+            collection.AddScoped(typeof(IRepositoryBaseAsync<,,>), typeof(RepositoryBase<,,>));
+            collection.AddScoped(typeof(IRepositoryQueryBase<,,>), typeof(RepositoryQueryBase<,,>));
+            collection.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>));
+            collection.AddScoped<ICustomerRepository, CustomerRepository>();
+        }
     }
 }

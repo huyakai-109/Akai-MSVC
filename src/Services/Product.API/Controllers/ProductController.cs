@@ -36,7 +36,7 @@ namespace Product.API.Controllers
         public async Task<IActionResult> Create([FromBody] CreateProductDto request)
         {
             var productEnity = await productRepository.GetProductByNo(request.No);
-            if(productEnity == null)
+            if(productEnity != null)
             {
                 return BadRequest($"Product No {request.No} is existed.");
             }
