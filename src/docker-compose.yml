@@ -33,6 +33,9 @@ services:
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.2
 
+  minio:
+    image: minio/minio:latest
+
  #microservices api section
   product.api:
    image: ${DOCKER_REGISTRY-}product-api:${PLATFORM:-linux}-${TAG:-latest}

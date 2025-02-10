@@ -9,3 +9,4 @@ obj/
 *.vsidx
 *.v2
 *.cache
+.minio.sys/
