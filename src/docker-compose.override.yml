@@ -146,3 +146,15 @@ services:
     ## PostgreSQL bên trong container đang lắng nghe trên cổng 5432 (cổng mặc định)
     ## Dùng Port=5432 trong connection string của customer.api vì nó kết nối trực tiếp đến customerdb bên trong Docker network.
     ## Dùng Port=5433 nếu bạn kết nối từ máy host (ví dụ: bằng pgadmin4, Navicat).
+
+  basket.api:
+    container_name: basket.api
+    environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+     - ASPNETCORE_URLS=http://+:8080
+     - "ConnectionStrings:RedisConnection=basketdb:6379"
+    depends_on:
+     - basketdb
+    ports:
+     - "6004:8080"
+    restart: always
